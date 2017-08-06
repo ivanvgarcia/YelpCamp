@@ -41,7 +41,7 @@ middlewareObj.checkCommentOwnership = function(req, res, next) {
                     next();
                 }
                 else {
-                    req.flash("error", "You don't have persmission to do that");
+                    req.flash("error", "You don't have permission to do that");
                     res.redirect("back");
                 }
             }
